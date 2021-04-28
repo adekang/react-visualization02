@@ -9,7 +9,7 @@ export const Home = () => {
     <div className="home">
       <header style={{backgroundImage: `url(.${headerBg})`}}/>
       <main>
-        <section className="section1">1</section>
+        <section className="section1 bordered">1</section>
         <section className="section2">1</section>
         <section className="section3">1</section>
       </main>
