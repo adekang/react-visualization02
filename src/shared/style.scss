@@ -37,5 +37,11 @@ body {
 
 #root {
   margin: 0 auto;
-  background: $blue;
+  background: bisque;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  flex: 1;
 }
