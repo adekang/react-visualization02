@@ -1,9 +1,9 @@
 @import "../shared/helper";
 
 
-.x {
-  width: px(367);
-  height: px(315);
-  font-size: px(24);
-  border: 1px solid red;
+.home {
+  > header {
+    height: px(58);
+    background-size: cover;
+  }
 }
