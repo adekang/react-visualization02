@@ -12,11 +12,19 @@
     background-size: cover;
   }
 
+  > footer {
+    height: px(19);
+    background-color: coral;
+  }
+
   > main {
     flex: 1;
     display: grid;
     grid-template:
-      "box1 box2 box3" 630fr/274fr 688fr 274fr;
+      "box1 box2 box3" 643fr/274fr 688fr 274fr;
+    grid-column-gap: px(15);
+    grid-row-gap: px(15);
+    margin: px(15) px(20);
 
     > .section1 {
       grid-area: box1;

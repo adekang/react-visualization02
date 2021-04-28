@@ -13,6 +13,7 @@ export const Home = () => {
         <section className="section2">1</section>
         <section className="section3">1</section>
       </main>
+      <footer>123</footer>
     </div>
   );
 };
