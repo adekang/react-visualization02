@@ -30,6 +30,9 @@
     > .section1 {
       grid-area: box1;
       background: $blue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     > .section2 {
@@ -42,7 +45,7 @@
       background: lightblue;
     }
 
-    .顾客群体, .男女比例 {
+    .顾客群体, .男女比例, .客流峰值 {
       height: px(167);
       display: flex;
       flex-direction: column;
@@ -109,6 +112,73 @@
           font-size: px(14);
           white-space: break-spaces;
           line-height: px(76);
+        }
+      }
+    }
+
+    .客流峰值 {
+      height: px(213);
+
+      > .upPart {
+        > h3 {
+          font-size: px(14);
+          padding-top: px(5);
+
+          > span {
+            color: #03d1db;
+          }
+        }
+
+        > div {
+          padding: px(9) 0;
+
+          > p {
+            font-size: px(10);
+            padding-bottom: px(2);
+          }
+
+          div {
+            width: px(200);
+            height: px(7);
+            background-color: #233b6c;
+            border-radius: px(4);
+            position: relative;
+
+            &::after {
+              position: absolute;
+              content: '';
+              width: 65%;
+              height: px(7);
+              border-radius: px(4);
+              background: linear-gradient(90deg, rgba(255, 177, 119, 1) 0%, rgba(255, 83, 83, 1) 100%);
+            }
+
+            &.upPart2 {
+              &::after {
+                content: '';
+                width: 55%;
+                background: linear-gradient(90deg, rgba(120, 163, 255, 1) 0%, rgba(139, 88, 255, 1) 100%);
+              }
+            }
+
+            &.upPart3 {
+              &::after {
+                content: '';
+                width: 80%;
+                background: linear-gradient(90deg, rgba(115, 238, 197, 1) 0%, rgba(73, 204, 240, 1) 100%);
+              }
+            }
+
+            &.upPart4 {
+              &::after {
+                content: '';
+                width: 40%;
+                background: linear-gradient(90deg, rgba(44, 205, 255, 1) 0%, rgba(55, 108, 222, 1) 100%);
+              }
+            }
+
+          }
+
         }
       }
     }
