@@ -6,6 +6,7 @@ import {Chart2} from '../components/chart-2';
 import {Chart3} from '../components/chart-3';
 import {Chart4} from '../components/chart-4';
 import {Chart5} from '../components/chart-5';
+import {Chart6} from '../components/chart-6';
 
 export const Home = () => {
   return (
@@ -23,6 +24,7 @@ export const Home = () => {
           <div className="charts bordered">
             <Chart4/>
             <Chart5/>
+            <Chart6/>
           </div>
 
           <div className="charts bordered">1</div>
