@@ -42,7 +42,7 @@
       background: lightblue;
     }
 
-    .顾客群体 {
+    .顾客群体, .男女比例 {
       height: px(167);
       display: flex;
       flex-direction: column;
@@ -58,17 +58,58 @@
         &::after {
           position: absolute;
           left: px(-60);
-          top: px(18);
+          top: px(16);
           content: '';
           width: px(50);
           height: px(1);
           background: linear-gradient(271deg, #28a5cb 0%, #102550 70%);
+        }
+
+        &::before {
+          position: absolute;
+          left: px(93);
+          top: px(16);
+          content: '';
+          width: px(50);
+          height: px(1);
+          background: linear-gradient(271deg, #102550 0%, #28a5cb 70%);
         }
       }
 
       .chart {
         flex: 1;
         width: 100%;
+      }
+    }
+
+    .男女比例 {
+      height: px(208);
+      display: flex;
+      flex-direction: column;
+
+
+      > .chart {
+        display: flex;
+        flex: 1;
+        position: relative;
+
+        > .main {
+          flex-grow: 1;
+        }
+
+        > .text {
+          position: absolute;
+          top: px(54);
+          right: px(95);
+          width: px(76);
+          height: px(76);
+          border-radius: 50%;
+          background: linear-gradient(180deg, rgba(209, 136, 67, 1) 0%, rgba(209, 136, 67, 0) 100%);
+          text-align: center;
+          font-size: px(14);
+          white-space: break-spaces;
+          line-height: px(76);
+        }
       }
     }
   }

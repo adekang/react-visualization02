@@ -1,66 +1,78 @@
 import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
+import {createEchartsOptions} from '../shared/create-echarts-options';
+import {px} from '../shared/px';
 
-console.log(echarts);
-const px = (n) => n / 1280 * (window as any).pageWidth;
 export const Chart1 = () => {
   const divRef = useRef(null);
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
-    myChart.setOption({
-      textStyle: {
-        fontSize: px(12),
-        color: '#79839E'
-      },
-      title: {show: false},
-      legend: {show: false},
-      xAxis: {
-        data: ['兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区'],
-        axisTick: {show: false},
-        axisLine: {
-          lineStyle: {color: '#083B70'}
-        },
-        axisLabel: {
-          fontSize: px(12),
-          formatter(val) {
-            if (val.length > 2) {
-              const array = val.split('');
-              array.splice(2, 0, '\n');
-              return array.join('');
-            } else {
-              return val;
-            }
-          }
-        },
+    myChart.setOption(createEchartsOptions({
+
+      legend: {
+        data: ['当前门店', '企业平均'],
+        itemWidth: px(14),
+        itemHeight: px(8),
+        top: '0%',
+        left: '8%',
+        textStyle: {
+          fontSize: px(8),
+          color: '#FFF'
+        }
       },
       grid: {
-        x: px(40),
-        y: px(40),
-        x2: px(40),
-        y2: px(40),
+        x: px(15),
+        x2: px(15),
+        y: px(30),
+        y2: px(5),
+        containLabel: true
       },
-      yAxis: {
-        splitLine: {show: false},
-        axisLine: {
-          show: true,
-          lineStyle: {color: '#083B70'}
-        },
+      xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['一次', '二次', '三次', '四次', '五次'],
+        axisTick: {show: false},
+        axisLine: {show: false},
         axisLabel: {
           fontSize: px(12)
         }
       },
-      series: [{
-        type: 'bar',
-        data: [10, 20, 36, 41, 15, 26, 37, 18, 29]
-      }]
-    });
+      yAxis: {
+        type: 'value',
+        axisLine: {show: false},
+        splitLine: {lineStyle: {color: '#183e72'}},
+        axisLabel: {
+          fontSize: px(12)
+        }
+      },
+      series: [
+        {
+          name: '当前门店',
+          type: 'line',
+          smooth: true,
+          data: [900, 400, 1200, 600, 1200],
+          itemStyle: {
+            color: '#6eef9b'
+          },
+          symbolSize: px(6)
+        },
+        {
+          name: '企业平均',
+          type: 'line',
+          smooth: true,
+          data: [100, 800, 200, 900, 600],
+          itemStyle: {
+            color: '#fbd336'
+          },
+          symbolSize: px(6)
+        }]
+    }));
   }, []);
 
   return (
     <div className="bordered 顾客群体">
       <h2>顾客群体分析</h2>
       <div ref={divRef} className="chart">
-
       </div>
     </div>
   );
