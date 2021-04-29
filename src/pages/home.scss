@@ -37,7 +37,22 @@
 
     > .section2 {
       grid-area: box2;
-      background: lightgray;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      > .charts {
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        > .chart {
+          flex: 1;
+          width: 100%;
+        }
+      }
     }
 
     > .section3 {
@@ -85,11 +100,10 @@
       }
     }
 
-    .男女比例 {
+    .男女比例, .巡店问题, .巡店报表 {
       height: px(208);
       display: flex;
       flex-direction: column;
-
 
       > .chart {
         display: flex;
@@ -114,6 +128,32 @@
           line-height: px(76);
         }
       }
+    }
+
+    .巡店问题, .巡店报表 {
+      width: px(160);
+
+      h2 {
+        font-size: px(12);
+        position: relative;
+        top: px(20);
+        left: px(15);
+      }
+
+      > .chart {
+        > .text01 {
+          position: absolute;
+          top: 40%;
+          left: 38%;
+          width: px(50);
+          border-radius: 50%;
+          font-size: px(14);
+          white-space: break-spaces;
+        }
+      }
+    }
+    .巡店报表{
+      width: px(248);
     }
 
     .客流峰值 {
