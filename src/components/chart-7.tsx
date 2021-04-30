@@ -4,7 +4,7 @@ import React from 'react';
 export const Chart7 = () => {
   return (
     <div className="门店排名 bordered">
-      <h2>客流峰值分析</h2>
+      <h2>门店排行</h2>
       <div className="rank">
         <table>
           <thead>

@@ -3,30 +3,37 @@
 
 .home {
   flex: 1;
-  height: 100%;
   display: flex;
   flex-direction: column;
   color: white;
-  overflow: hidden;
 
   > header {
+    width: px(1280);
+    margin: 0 auto;
     height: px(58);
     background-size: cover;
+
   }
 
   > footer {
+    width: px(1280);
+    margin: 0 auto;
     height: px(16);
-    background-color: coral;
+    text-align: center;
+    background-size: cover;
+    font-size: px(12);
+
   }
 
   > main {
+    width: px(1280);
     flex: 1;
     display: grid;
     grid-template:
       "box1 box2 box3" 643fr/274fr 688fr 274fr;
     grid-column-gap: px(15);
     grid-row-gap: px(15);
-    margin: px(15) px(20);
+    margin: px(15) 0;
 
     > .section1 {
       grid-area: box1;
@@ -184,6 +191,7 @@
           width: 100%;
           margin-top: px(25);
           border-collapse: collapse;
+          text-align: center;
 
           th, td {
             height: px(25);
@@ -269,11 +277,6 @@
         }
       }
     }
-  }
-
-  > footer {
-    text-align: center;
-    font-size: px(12);
   }
 }
 
