@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   color: white;
+  overflow: hidden;
 
   > header {
     height: px(58);
@@ -14,7 +15,7 @@
   }
 
   > footer {
-    height: px(19);
+    height: px(16);
     background-color: coral;
   }
 
@@ -61,7 +62,7 @@
       justify-content: space-between;
     }
 
-    .顾客群体, .男女比例, .客流峰值, .顾客类型 {
+    .顾客群体, .男女比例, .客流峰值, .顾客类型, .到店频次 {
       height: px(167);
       display: flex;
       flex-direction: column;
@@ -102,7 +103,7 @@
       }
     }
 
-    .男女比例, .巡店问题, .巡店报表, .店内考评, .历年统计 {
+    .男女比例, .巡店问题, .巡店报表, .店内考评, .历年统计,.到店频次 {
       height: px(208);
       display: flex;
       flex-direction: column;
@@ -133,7 +134,7 @@
     }
 
 
-    .巡店问题, .巡店报表, .店内考评, .门店排名, .历年统计 {
+    .巡店问题, .巡店报表, .店内考评, .门店排名, .历年统计,  {
       width: px(160);
 
       h2 {
@@ -155,6 +156,7 @@
         }
       }
     }
+
 
     .历年统计 {
       height: px(167);
