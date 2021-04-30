@@ -23,7 +23,7 @@ export const Chart5 = () => {
         y: px(30),
         x2: px(40),
         y2: px(40),
-        width: "85%",
+        width: '85%',
       },
       xAxis: {
         data: data.map(i => i.name),
@@ -67,7 +67,7 @@ export const Chart5 = () => {
   }, []);
 
   return (
-    <div className="bordered 巡店报表">
+    <div className="巡店报表">
       <h2>巡店报表</h2>
       <div className="chart">
         <div className="main" ref={divRef}/>

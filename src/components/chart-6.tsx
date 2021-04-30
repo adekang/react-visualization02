@@ -6,7 +6,7 @@ import {px} from '../shared/px';
 export const Chart6 = () => {
   const divRef = useRef(null);
   useEffect(() => {
-    var myChart = echarts.init(divRef.current);
+    const myChart = echarts.init(divRef.current);
     myChart.setOption(createEchartsOptions({
       series: [{
         type: 'gauge',
@@ -16,6 +16,7 @@ export const Chart6 = () => {
         pointer: {show: false},
         startAngle: 90,
         endAngle: -270,
+        radius: "65%",
         progress: {
           show: true,
           overlap: false,
@@ -28,12 +29,11 @@ export const Chart6 = () => {
         axisLine: {
           lineStyle: {
             width: px(30),
-            opacity: 0.2
+            opacity: 0.1
           }
         },
         splitLine: {
           show: false,
-
         },
         axisTick: {
           show: false
@@ -78,7 +78,7 @@ export const Chart6 = () => {
   }, []);
 
   return (
-    <div className="bordered 店内考评">
+    <div className="店内考评">
       <h2>店内考评</h2>
       <div className="chart">
         <div className="main" ref={divRef}/>

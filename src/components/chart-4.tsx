@@ -38,7 +38,7 @@ export const Chart4 = () => {
   }, []);
 
   return (
-    <div className="bordered 巡店问题">
+    <div className="巡店问题">
       <h2>巡店问题分析</h2>
       <div className="chart">
         <div className="main" ref={divRef}/>
