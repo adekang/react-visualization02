@@ -79,7 +79,7 @@ export const Chart6 = () => {
 
   return (
     <div className="店内考评">
-      <h2>店内考评</h2>
+      <h2>店内考评暂时OK</h2>
       <div className="chart">
         <div className="main" ref={divRef}/>
       </div>
