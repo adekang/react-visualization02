@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Chart7 = () => {
   return (
-    <div className="bordered 门店排名">
+    <div className="门店排名 bordered">
       <h2>客流峰值分析</h2>
       <div className="rank">
         <table>
@@ -22,59 +22,59 @@ export const Chart7 = () => {
           </thead>
           <tbody>
           <tr>
-            <th>1</th>
-            <th>每日明生广场店</th>
-            <th>929.00元</th>
-            <th>15</th>
-            <th>49.03元</th>
-            <th>480</th>
-            <th>16.08%</th>
-            <th>86.4</th>
-            <th>8</th>
+            <td>1</td>
+            <td>每日明生广场店</td>
+            <td>929.00元</td>
+            <td>15</td>
+            <td>49.03元</td>
+            <td>480</td>
+            <td>16.08%</td>
+            <td>86.4</td>
+            <td>8</td>
           </tr>
           <tr>
-            <th>1</th>
-            <th>每日明生广场店</th>
-            <th>929.00元</th>
-            <th>15</th>
-            <th>49.03元</th>
-            <th>480</th>
-            <th>16.08%</th>
-            <th>86.4</th>
-            <th>8</th>
+            <td>1</td>
+            <td>每日明生广场店</td>
+            <td>929.00元</td>
+            <td>15</td>
+            <td>49.03元</td>
+            <td>480</td>
+            <td>16.08%</td>
+            <td>86.4</td>
+            <td>8</td>
           </tr>
           <tr>
-            <th>1</th>
-            <th>每日明生广场店</th>
-            <th>929.00元</th>
-            <th>15</th>
-            <th>49.03元</th>
-            <th>480</th>
-            <th>16.08%</th>
-            <th>86.4</th>
-            <th>8</th>
+            <td>1</td>
+            <td>每日明生广场店</td>
+            <td>929.00元</td>
+            <td>15</td>
+            <td>49.03元</td>
+            <td>480</td>
+            <td>16.08%</td>
+            <td>86.4</td>
+            <td>8</td>
           </tr>
           <tr>
-            <th>1</th>
-            <th>每日明生广场店</th>
-            <th>929.00元</th>
-            <th>15</th>
-            <th>49.03元</th>
-            <th>480</th>
-            <th>16.08%</th>
-            <th>86.4</th>
-            <th>8</th>
+            <td>1</td>
+            <td>每日明生广场店</td>
+            <td>929.00元</td>
+            <td>15</td>
+            <td>49.03元</td>
+            <td>480</td>
+            <td>16.08%</td>
+            <td>86.4</td>
+            <td>8</td>
           </tr>
           <tr>
-            <th>1</th>
-            <th>每日明生广场店</th>
-            <th>929.00元</th>
-            <th>15</th>
-            <th>49.03元</th>
-            <th>480</th>
-            <th>16.08%</th>
-            <th>86.4</th>
-            <th>8</th>
+            <td>1</td>
+            <td>每日明生广场店</td>
+            <td>929.00元</td>
+            <td>15</td>
+            <td>49.03元</td>
+            <td>480</td>
+            <td>16.08%</td>
+            <td>86.4</td>
+            <td>8</td>
           </tr>
           </tbody>
         </table>

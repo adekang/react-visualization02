@@ -8,6 +8,8 @@ import {Chart4} from '../components/chart-4';
 import {Chart5} from '../components/chart-5';
 import {Chart6} from '../components/chart-6';
 import {Chart7} from '../components/chart-7';
+import {Chart8} from '../components/chart-8';
+import {Chart9} from '../components/chart-9';
 
 export const Home = () => {
   return (
@@ -22,21 +24,26 @@ export const Home = () => {
 
 
         <section className="section2 ">
+
+          <div className="charts ">
+            <Chart8/>
+          </div>
+
           <div className="charts bordered">
             <Chart4/>
             <Chart5/>
             <Chart6/>
           </div>
 
-          <div className="charts bordered">
+          <div className="charts">
             <Chart7/>
           </div>
-
-          <div className="charts bordered">2</div>
         </section>
 
 
-        <section className="section3">1</section>
+        <section className="section3">
+          <Chart9/>
+        </section>
       </main>
       <footer>123</footer>
     </div>

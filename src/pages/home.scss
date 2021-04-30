@@ -43,7 +43,6 @@
 
       > .charts {
         width: 100%;
-        flex: 1;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -57,10 +56,12 @@
 
     > .section3 {
       grid-area: box3;
-      background: lightblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .顾客群体, .男女比例, .客流峰值 {
+    .顾客群体, .男女比例, .客流峰值, .顾客类型 {
       height: px(167);
       display: flex;
       flex-direction: column;
@@ -95,12 +96,13 @@
       }
 
       .chart {
+        display: flex;
         flex: 1;
         width: 100%;
       }
     }
 
-    .男女比例, .巡店问题, .巡店报表, .店内考评 {
+    .男女比例, .巡店问题, .巡店报表, .店内考评, .历年统计 {
       height: px(208);
       display: flex;
       flex-direction: column;
@@ -130,14 +132,15 @@
       }
     }
 
-    .巡店问题, .巡店报表, .店内考评 {
+
+    .巡店问题, .巡店报表, .店内考评, .门店排名, .历年统计 {
       width: px(160);
 
       h2 {
         font-size: px(12);
         position: relative;
-        top: px(15);
-        left: px(15);
+        top: px(12);
+        left: px(12);
       }
 
       > .chart {
@@ -153,12 +156,51 @@
       }
     }
 
+    .历年统计 {
+      height: px(167);
+      width: 100%;
+    }
+
     .巡店报表 {
       width: px(248);
     }
 
     .店内考评 {
       width: px(204);
+    }
+
+    .门店排名 {
+      height: px(213);
+      width: 100%;
+
+      > .rank {
+        padding: 0 px(24);
+        height: px(166);
+        text-align: left;
+
+        > table {
+          width: 100%;
+          margin-top: px(25);
+          border-collapse: collapse;
+
+          th, td {
+            height: px(25);
+            font-size: px(10);
+          }
+
+          thead {
+            th {
+              color: #04bed0;
+            }
+          }
+
+          tbody {
+            tr:nth-child(2n-1) {
+              background: linear-gradient(90deg, rgba(10, 66, 114, 1) 0%, rgba(10, 66, 114, 0) 100%);
+            }
+          }
+        }
+      }
     }
 
     .客流峰值 {
@@ -221,9 +263,7 @@
                 background: linear-gradient(90deg, rgba(44, 205, 255, 1) 0%, rgba(55, 108, 222, 1) 100%);
               }
             }
-
           }
-
         }
       }
     }
