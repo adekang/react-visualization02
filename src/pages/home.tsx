@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.scss';
 import headerBg from '../images/headerBg.png';
+import footerBg from '../images/footer.png';
 import {Chart1} from '../components/chart-1';
 import {Chart2} from '../components/chart-2';
 import {Chart3} from '../components/chart-3';
@@ -11,8 +12,10 @@ import {Chart7} from '../components/chart-7';
 import {Chart8} from '../components/chart-8';
 import {Chart9} from '../components/chart-9';
 import {Chart10} from '../components/chart-10';
+import {Chart11} from '../components/chart-11';
 
 export const Home = () => {
+  const year = new Date().getFullYear();
   return (
     <div className="home">
       <header style={{backgroundImage: `url(.${headerBg})`}}/>
@@ -45,9 +48,12 @@ export const Home = () => {
         <section className="section3">
           <Chart9/>
           <Chart10/>
+          <Chart11/>
         </section>
       </main>
-      <footer>123</footer>
+      <footer style={{backgroundImage: `url(.${footerBg})`}}>
+        &copy; 小康康 2020-{year}
+      </footer>
     </div>
   );
 };
